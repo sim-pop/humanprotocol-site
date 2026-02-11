@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Assets</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{background:#0e0e0e;color:#fff;font-family:'JetBrains Mono',monospace;padding:40px;display:flex;flex-direction:column;align-items:center;gap:40px}
+h2{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#D45F3C;margin-bottom:8px}
+p.note{font-size:11px;color:#666;margin-bottom:12px}
+.wrap{display:flex;flex-direction:column;align-items:center}
+canvas{border:1px solid #333;border-radius:8px}
+.dl{margin-top:12px;padding:10px 28px;background:#D45F3C;color:#FFF9F0;border:none;border-radius:100px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1px;cursor:pointer}
+.dl:hover{background:#e8734f}
+#s{color:#D45F3C;font-size:14px;margin-bottom:20px}
+</style>
+</head>
+<body>
+<div id="s">Loading fonts...</div>
+
+<div class="wrap">
+<h2>Profile</h2><p class="note">400×400</p>
+<canvas id="c1" width="400" height="400" style="width:400px"></canvas>
+<button class="dl" onclick="sv('c1','twitter-profile-400x400')">Download</button>
+</div>
+
+<div class="wrap">
+<h2>Cover</h2><p class="note">1500×500</p>
+<canvas id="c2" width="1500" height="500" style="max-width:100%;height:auto"></canvas>
+<button class="dl" onclick="sv('c2','twitter-cover-1500x500')">Download</button>
+</div>
+
+<div class="wrap">
+<h2>Spotify</h2><p class="note">3000×3000</p>
+<canvas id="c3" width="3000" height="3000" style="width:500px"></canvas>
+<button class="dl" onclick="sv('c3','spotify-cover-3000x3000')">Download</button>
+</div>
+
+<script>
+function fp(c,cx,cy,rr){rr.forEach(function(r){c.beginPath();c.strokeStyle='rgba(212,95,60,'+r.o+')';c.lineWidth=r.w;c.ellipse(cx,cy,r.a,r.b,0,0,Math.PI*2);c.stroke()})}
+function dt(c,x,y,r,o){c.beginPath();c.fillStyle='rgba(212,95,60,'+(o||1)+')';c.arc(x,y,r,0,Math.PI*2);c.fill()}
+
+function go(){
+document.getElementById('s').textContent='Rendering...';
+
+var c=document.getElementById('c1').getContext('2d');
+c.fillStyle='#1A1A1A';c.fillRect(0,0,400,400);
+fp(c,200,200,[{a:90,b:116,o:.3,w:8},{a:72,b:94,o:.5,w:8},{a:54,b:70,o:.7,w:8},{a:35,b:45,o:.85,w:8}]);
+dt(c,200,200,15,1);
+
+c=document.getElementById('c2').getContext('2d');
+c.fillStyle='#1A1A1A';c.fillRect(0,0,1500,500);
+c.fillStyle='#FFF9F0';c.font='80px "Instrument Serif"';c.textAlign='center';c.textBaseline='middle';
+c.fillText('The Human Protocol',750,190);
+c.fillStyle='rgba(212,95,60,0.9)';c.font='18px "JetBrains Mono"';
+c.fillText('The personal side of building big things',750,280);
+c.strokeStyle='rgba(212,95,60,0.25)';c.lineWidth=1;c.beginPath();c.moveTo(660,318);c.lineTo(840,318);c.stroke();
+c.fillStyle='#7a726b';c.font='15px "JetBrains Mono"';
+c.fillText('hosted by Simona Pop',750,352);
+
+c=document.getElementById('c3').getContext('2d');
+c.fillStyle='#1A1A1A';c.fillRect(0,0,3000,3000);
+fp(c,1500,1150,[{a:600,b:780,o:.15,w:14},{a:480,b:625,o:.22,w:14},{a:360,b:470,o:.32,w:14},{a:240,b:312,o:.48,w:14},{a:130,b:168,o:.65,w:14}]);
+dt(c,1500,1150,45,.9);
+c.fillStyle='#FFF9F0';c.font='260px "Instrument Serif"';c.textAlign='center';c.textBaseline='top';
+c.fillText('The Human',1500,2200);c.fillText('Protocol',1500,2480);
+c.fillStyle='rgba(212,95,60,0.8)';c.font='68px "JetBrains Mono"';
+c.fillText('THE PERSONAL SIDE OF',1500,2780);c.fillText('BUILDING BIG THINGS',1500,2870);
+
+document.getElementById('s').textContent='Ready ✓';document.getElementById('s').style.color='#4CAF50';
+}
+
+function sv(id,fn){var a=document.createElement('a');a.download=fn+'.png';a.href=document.getElementById(id).toDataURL('image/png');a.click()}
+
+document.fonts.ready.then(function(){setTimeout(go,300)});
+</script>
+</body>
+</html>
