@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Human Protocol | The Personal Side of Building Big Things</title>
+<meta name="description" content="A podcast where builders talk about the messy parts of creating the future. Real conversations about the doubts, the pivots, and the conversations that stay offline. Hosted by Simona Pop.">
+<meta name="keywords" content="podcast, founders, builders, crypto, web3, startup, entrepreneurship, mental health, burnout, tech, human side of tech, Simona Pop, building in public">
+<meta name="author" content="Simona Pop">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.thehumanprotocol.xyz/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.thehumanprotocol.xyz/">
+<meta property="og:title" content="The Human Protocol | The Personal Side of Building Big Things">
+<meta property="og:description" content="A podcast where builders talk about the messy parts of creating the future. The doubts. The pivots. The conversations that stay offline. Hosted by Simona Pop.">
+<meta property="og:site_name" content="The Human Protocol">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Sim_Pop">
+<meta name="twitter:creator" content="@Sim_Pop">
+<meta name="twitter:title" content="The Human Protocol | The Personal Side of Building Big Things">
+<meta name="twitter:description" content="A podcast where builders talk about the messy parts of creating the future. The doubts. The pivots. The conversations that stay offline.">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "name": "The Human Protocol",
+  "description": "A podcast where builders talk about the messy parts of creating the future. Real conversations about the doubts, the pivots, and the conversations that stay offline.",
+  "url": "https://www.thehumanprotocol.xyz",
+  "author": {
+    "@type": "Person",
+    "name": "Simona Pop",
+    "url": "https://x.com/Sim_Pop"
+  },
+  "genre": ["Technology", "Entrepreneurship", "Mental Health", "Crypto"],
+  "inLanguage": "en"
+}
+</script>
+
+<!-- Favicon (fingerprint) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M 8 20 Q 8 5 20 5 Q 32 5 32 20 Q 32 34 20 34 Q 8 34 8 20' stroke='%23D45F3C' stroke-width='2.5' fill='none' opacity='0.5'/%3E%3Cpath d='M 12 20 Q 12 9 20 9 Q 28 9 28 20 Q 28 30 20 30 Q 12 30 12 20' stroke='%23D45F3C' stroke-width='2.5' fill='none' opacity='0.7'/%3E%3Cpath d='M 16 20 Q 16 13 20 13 Q 24 13 24 20 Q 24 26 20 26 Q 16 26 16 20' stroke='%23D45F3C' stroke-width='2.5' fill='none' opacity='0.85'/%3E%3Ccircle cx='20' cy='20' r='3' fill='%23D45F3C'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1A1512;--bg-deep:#12100D;--fg:#F5EDE4;--accent:#E06030;--accent-glow:#F07040;--accent-soft:rgba(224,96,48,.15);--muted:#9A8D80;--card-bg:rgba(245,237,228,.03);--card-border:rgba(245,237,228,.08);--serif:'Fraunces',Georgia,serif;--sans:'DM Sans',sans-serif;--mono:'JetBrains Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.12'/%3E%3C/svg%3E");pointer-events:none;z-index:9999}
+.cursor-glow{position:fixed;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(224,96,48,.06) 0%,transparent 70%);pointer-events:none;z-index:1;transform:translate(-50%,-50%)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px);background:rgba(26,26,26,.75);border-bottom:1px solid var(--card-border)}
+.nav-logo{font-family:var(--mono);font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--fg);text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-logo svg{width:22px;height:22px}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-family:var(--sans);font-size:13px;color:var(--muted);text-decoration:none;letter-spacing:.5px;transition:color .3s}
+.nav-links a:hover{color:var(--fg)}
+.nav-cta{background:var(--accent)!important;color:var(--fg)!important;padding:8px 20px;border-radius:100px;font-weight:600;font-size:12px!important;letter-spacing:.5px;transition:all .3s!important}
+.nav-cta:hover{background:var(--accent-glow)!important;transform:scale(1.05);box-shadow:0 0 30px rgba(212,95,60,.3)}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 40px 60px;position:relative;overflow:hidden}
+.hero-fingerprint{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;opacity:0;animation:fpReveal 2s .2s forwards}
+@keyframes fpReveal{0%{opacity:0;transform:translate(-50%,-50%) scale(.85)}100%{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+.hero-fingerprint svg{width:100%;height:100%}
+.fp-rotate{animation:fpSpin 120s linear infinite;transform-origin:center}
+@keyframes fpSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.hero-tag{font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);margin-bottom:40px;opacity:0;animation:fadeUp .8s .5s forwards;display:flex;align-items:center;gap:12px;position:relative;z-index:2}
+.hero-tag::before,.hero-tag::after{content:'';width:40px;height:1px;background:var(--accent);opacity:.5}
+.hero h1{font-family:var(--serif);font-size:clamp(3.5rem,9vw,8.5rem);line-height:.95;font-weight:400;max-width:900px;letter-spacing:-2px;opacity:0;animation:fadeUp 1s .7s forwards;position:relative;z-index:2}
+.hero h1 em{font-style:italic;color:var(--accent);position:relative}
+.hero h1 em::after{content:'';position:absolute;bottom:5px;left:0;right:0;height:3px;background:var(--accent);opacity:.3;border-radius:2px}
+.hero-sub{font-size:18px;color:var(--muted);max-width:520px;line-height:1.7;margin-top:40px;opacity:0;animation:fadeUp .8s 1s forwards;position:relative;z-index:2}
+.hero-sub-mono{font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2.5vw,1.5rem);color:var(--muted);max-width:560px;line-height:1.6;margin-top:18px;opacity:0;animation:fadeUp .8s 1s forwards;position:relative;z-index:2}
+.hero-actions{display:flex;gap:16px;margin-top:30px;opacity:0;animation:fadeUp .8s 1.2s forwards;flex-wrap:wrap;justify-content:center;position:relative;z-index:2}
+.btn-primary{background:var(--accent);color:var(--fg);padding:16px 40px;border-radius:100px;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.5px;border:none;cursor:pointer;transition:all .4s cubic-bezier(.175,.885,.32,1.275);position:relative;overflow:hidden}
+.btn-primary::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.15),transparent);opacity:0;transition:opacity .3s}
+.btn-primary:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 40px rgba(212,95,60,.4),0 0 80px rgba(212,95,60,.12)}
+.btn-primary:hover::before{opacity:1}
+.btn-secondary{background:transparent;color:var(--fg);padding:16px 40px;border-radius:100px;text-decoration:none;font-weight:500;font-size:15px;border:1px solid var(--card-border);transition:all .3s;cursor:pointer}
+.btn-secondary:hover{border-color:var(--muted);background:rgba(255,255,255,.03)}
+.hero-scroll{position:absolute;bottom:40px;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fadeUp .8s 1.5s forwards;z-index:2}
+.hero-scroll span{font-family:var(--mono);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,var(--accent),transparent);animation:scrollPulse 2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{transform:scaleY(.5);opacity:.3}50%{transform:scaleY(1);opacity:1}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.ticker{padding:24px 0;border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);overflow:hidden}
+.ticker-track{display:flex;gap:60px;animation:tickerScroll 30s linear infinite;width:max-content}
+.ticker-item{display:flex;align-items:center;gap:12px;white-space:nowrap;font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.ticker-item .fp-dot{width:18px;height:18px;opacity:.6;flex-shrink:0}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.manifesto{padding:160px 40px}
+.manifesto-inner{max-width:800px;margin:0 auto}
+.section-label{font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);margin-bottom:50px;display:flex;align-items:center;gap:12px}
+.section-label::after{content:'';flex:1;height:1px;background:var(--card-border)}
+.manifesto-text{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,3rem);line-height:1.35;font-weight:400;letter-spacing:-.5px}
+.manifesto-text .highlight{color:var(--accent)}
+.manifesto-text .dim{color:var(--muted)}
+.manifesto-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:80px}
+.stat{background:var(--card-bg);border:1px solid var(--card-border);padding:44px 32px;text-align:center;transition:all .4s;position:relative;overflow:hidden}
+.stat::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(212,95,60,.06),transparent);opacity:0;transition:opacity .4s}
+.stat:hover::before{opacity:1}
+.stat:hover{background:rgba(212,95,60,.04);border-color:rgba(212,95,60,.2)}
+.stat-number{font-family:var(--serif);font-size:3rem;color:var(--accent);line-height:1}
+.stat-label{font-family:var(--sans);font-weight:500;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:12px;line-height:1.5}
+.episodes{padding:120px 40px}
+.episodes-inner{max-width:900px;margin:0 auto}
+.episode-card{display:grid;grid-template-columns:80px 1fr auto;gap:30px;align-items:center;padding:36px 0;border-bottom:1px solid var(--card-border);cursor:default;transition:all .3s;text-decoration:none;color:inherit;opacity:.35;pointer-events:none}
+.episode-card:first-of-type{border-top:1px solid var(--card-border)}
+.episode-card:hover{padding-left:0;border-color:var(--card-border)}
+.episode-card:hover .ep-number{color:var(--muted);text-shadow:none}
+.episode-card:hover .ep-play{background:var(--card-bg);border-color:var(--card-border);transform:none}
+.ep-number{font-family:var(--serif);font-size:2.5rem;font-style:italic;color:var(--muted);transition:all .4s;text-align:center}
+.ep-info{display:flex;flex-direction:column;gap:8px}
+.ep-title{font-family:var(--serif);font-size:1.5rem;letter-spacing:-.5px}
+.ep-meta{display:flex;gap:16px;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.ep-badge{color:var(--accent);background:var(--accent-soft);padding:2px 8px;border-radius:4px}
+.ep-play{width:50px;height:50px;border-radius:50%;background:var(--card-bg);border:1px solid var(--card-border);display:flex;align-items:center;justify-content:center;transition:all .4s}
+.ep-play svg{width:16px;height:16px;fill:var(--fg);margin-left:2px}
+.subscribe{padding:160px 40px;text-align:center;position:relative;overflow:hidden}
+.subscribe-fingerprint{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;pointer-events:none}
+.subscribe-inner{max-width:600px;margin:0 auto;position:relative;z-index:2}
+.subscribe h2{font-family:var(--serif);font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.05;letter-spacing:-1px;margin-bottom:6px}
+.subscribe h2 em{color:var(--accent);font-style:italic}
+.subscribe p{color:var(--muted);font-size:16px;line-height:1.7;margin-bottom:48px}
+.email-form{display:flex;flex-direction:column;align-items:center;max-width:480px;margin:0 auto;gap:20px;margin-top:40px}
+.email-form:focus-within textarea{border-color:var(--accent);box-shadow:0 0 40px rgba(224,96,48,.1)}
+.email-form input{flex:1;background:transparent;border:none;padding:14px 24px;color:var(--fg);font-family:var(--sans);font-size:15px;outline:none}
+.email-form input::placeholder{color:var(--muted)}
+.email-form button{background:var(--accent);color:var(--fg);padding:14px 32px;border-radius:100px;border:none;font-family:var(--sans);font-weight:600;font-size:14px;cursor:pointer;transition:all .3s;white-space:nowrap}
+.email-form button:hover{background:var(--accent-glow);box-shadow:0 0 30px rgba(224,96,48,.4);transform:scale(1.02)}
+.subscribe-note{font-family:var(--sans);font-size:11px;color:var(--muted);margin-top:20px;letter-spacing:.5px}
+.subscribe-platforms{display:flex;justify-content:center;gap:24px;margin-top:60px}
+.platform-btn{display:flex;align-items:center;gap:10px;padding:14px 24px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;color:var(--fg);text-decoration:none;font-size:14px;font-weight:500;transition:all .3s}
+.platform-btn:hover{border-color:var(--accent);background:rgba(212,95,60,.05);transform:translateY(-2px)}
+.platform-btn svg{width:20px;height:20px}
+.host{padding:120px 40px;border-top:1px solid var(--card-border)}
+.host-inner{max-width:700px;margin:0 auto;display:grid;grid-template-columns:120px 1fr;gap:40px;align-items:start}
+.host-avatar{width:120px;height:120px;border-radius:50%;background:var(--bg-deep);display:flex;align-items:center;justify-content:center;position:relative;border:2px solid rgba(212,95,60,.3)}
+.host-avatar svg{width:70px;height:70px}
+.host-avatar::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(212,95,60,.15)}
+.host-info h3{font-family:var(--serif);font-size:1.8rem;margin-bottom:4px}
+.host-handle{font-family:var(--sans);font-weight:500;font-size:13px;color:var(--accent);margin-bottom:20px;display:inline-block;text-decoration:none;transition:color .3s}
+.host-handle:hover{color:var(--accent-glow)}
+.host-name-link{color:var(--accent);text-decoration:none;transition:all .3s}
+.host-name-link:hover{color:var(--accent-glow);text-shadow:0 0 20px rgba(212,95,60,.3)}
+.host-bio{color:var(--muted);line-height:1.8;font-size:15px}
+.host-bio em{color:var(--fg);font-style:normal}
+footer{padding:40px;border-top:1px solid var(--card-border);display:flex;justify-content:space-between;align-items:center}
+.footer-left{font-family:var(--sans);font-size:11px;color:var(--muted);letter-spacing:1px;display:flex;align-items:center;gap:8px}
+.footer-left svg{width:14px;height:14px}
+.footer-socials{display:flex;gap:12px}
+.footer-x{display:flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:500;font-size:13px;color:var(--fg);text-decoration:none;letter-spacing:1px;padding:10px 20px;border:1px solid var(--card-border);border-radius:100px;transition:all .3s}
+.footer-x:hover{border-color:var(--accent);color:var(--accent);background:rgba(212,95,60,.05);transform:translateY(-2px)}
+.float-bar{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:rgba(26,26,26,.92);backdrop-filter:blur(20px);border:1px solid var(--card-border);border-radius:100px;padding:10px 10px 10px 28px;display:flex;align-items:center;gap:16px;z-index:100;transition:transform .5s cubic-bezier(.175,.885,.32,1.275);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.float-bar.visible{transform:translateX(-50%) translateY(0)}
+.float-bar-text{font-size:14px;color:var(--fg);white-space:nowrap}
+.float-bar-text strong{color:var(--accent)}
+.float-bar .btn-primary{padding:12px 28px;font-size:13px}
+.waveform{display:flex;align-items:center;gap:3px;height:30px}
+.waveform span{width:3px;background:var(--accent);border-radius:3px;animation:wave 1.2s ease-in-out infinite}
+@keyframes wave{0%,100%{height:4px}50%{height:24px}}
+.reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.form-success{display:none;align-items:center;justify-content:center;gap:12px;padding:20px;color:var(--accent);font-weight:600;font-size:16px;animation:fadeUp .5s forwards}
+.form-success svg{width:24px;height:24px}
+@media(max-width:768px){
+nav{padding:14px 16px}
+.nav-logo{font-size:11px!important;letter-spacing:2px!important}
+.nav-logo svg{width:16px;height:16px}
+.nav-links a:not(.nav-cta){display:none}
+.nav-x{font-size:11px!important}
+.hero{padding:100px 24px 80px}
+.hero-fingerprint{width:400px;height:400px}
+.hero h1{letter-spacing:-1px}
+.hero-sub-mono{max-width:90%;font-size:1rem!important}
+.manifesto{padding:80px 24px}
+.manifesto-text{font-size:1.6rem!important}
+.manifesto-stats{grid-template-columns:1fr}
+.stat{padding:28px 20px}
+.stat-number{font-size:2.2rem}
+.episodes{padding:80px 24px}
+.episode-card{grid-template-columns:50px 1fr 40px;gap:16px;padding:24px 0}
+.ep-number{font-size:1.5rem}
+.ep-title{font-size:1.1rem}
+.subscribe{padding:80px 24px}
+.email-form{flex-direction:column;border-radius:16px}
+.email-form button{border-radius:100px}
+.subscribe-platforms{flex-wrap:wrap}
+.host-inner{grid-template-columns:1fr;justify-items:center;text-align:center}
+.host-avatar{width:120px;height:120px}
+footer{flex-direction:column;gap:16px;text-align:center}
+.footer-socials{justify-content:center}
+.float-bar{left:12px;right:12px;bottom:12px;transform:translateX(0) translateY(120px);padding:10px 10px 10px 16px;gap:10px;justify-content:center}
+.float-bar.visible{transform:translateX(0) translateY(0)}
+.float-bar-text{font-size:12px}
+.float-bar .btn-primary{padding:10px 18px;font-size:12px;white-space:nowrap}
+.waveform{display:none}
+.hero-actions{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+<div class="cursor-glow" id="cursorGlow"></div>
+<svg style="display:none"><defs>
+<symbol id="fp-small" viewBox="0 0 40 40">
+<path d="M 8 20 Q 8 5 20 5 Q 32 5 32 20 Q 32 34 20 34 Q 8 34 8 20" stroke="#E06030" stroke-width="2.5" fill="none" opacity="0.5"/>
+<path d="M 12 20 Q 12 9 20 9 Q 28 9 28 20 Q 28 30 20 30 Q 12 30 12 20" stroke="#E06030" stroke-width="2.5" fill="none" opacity="0.7"/>
+<path d="M 16 20 Q 16 13 20 13 Q 24 13 24 20 Q 24 26 20 26 Q 16 26 16 20" stroke="#E06030" stroke-width="2.5" fill="none" opacity="0.85"/>
+<circle cx="20" cy="20" r="3" fill="#E06030"/>
+</symbol>
+<symbol id="fp-large" viewBox="0 0 400 400">
+<g transform="translate(200,200)">
+<path d="M-160 0Q-160-200 0-200Q160-200 160 0Q160 180 0 180Q-160 180-160 0" stroke="#E06030" stroke-width="4" fill="none" opacity="0.10"/>
+<path d="M-130 0Q-130-168 0-168Q130-168 130 0Q130 150 0 150Q-130 150-130 0" stroke="#E06030" stroke-width="4" fill="none" opacity="0.13"/>
+<path d="M-100 0Q-100-132 0-132Q100-132 100 0Q100 115 0 115Q-100 115-100 0" stroke="#E06030" stroke-width="4" fill="none" opacity="0.16"/>
+<path d="M-70 0Q-70-92 0-92Q70-92 70 0Q70 80 0 80Q-70 80-70 0" stroke="#E06030" stroke-width="4" fill="none" opacity="0.20"/>
+<path d="M-42 0Q-42-55 0-55Q42-55 42 0Q42 48 0 48Q-42 48-42 0" stroke="#E06030" stroke-width="4" fill="none" opacity="0.24"/>
+<circle cx="0" cy="0" r="14" fill="#E06030" opacity="0.28"/>
+</g>
+</symbol>
+</defs></svg>
+
+<nav>
+<a href="#" class="nav-logo"><svg><use href="#fp-small"/></svg>The Human Protocol</a>
+<div class="nav-links">
+<a href="#episodes">Episodes</a>
+<a href="#about">About</a>
+<a href="https://x.com/_humanprotocol" target="_blank" rel="noopener" class="nav-cta nav-x">𝕏 Follow</a>
+</div>
+</nav>
+
+<section class="hero" aria-label="Hero">
+<div class="hero-fingerprint"><svg><use href="#fp-large"/></svg></div>
+<h1>The <em>personal</em> side of building big things</h1>
+<p class="hero-sub-mono">Where builders talk about the messy parts of creating the future.</p>
+<div class="hero-actions">
+<a href="https://x.com/_humanprotocol" target="_blank" rel="noopener" class="btn-primary">Get Early Access</a>
+<a href="#episodes" class="btn-secondary">Preview Episodes</a>
+</div>
+</div>
+</section>
+
+<div class="ticker"><div class="ticker-track">
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>The call where you almost quit</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>What burnout sounds like out loud</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>When your cofounder stopped answering</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>Six months of lying that you're fine</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>The win that didn't fix anything</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>Conversations that never make the podcast tour</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>What nobody clapped for</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>The call where you almost quit</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>What burnout sounds like out loud</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>When your cofounder stopped answering</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>Six months of lying that you're fine</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>The win that didn't fix anything</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>Conversations that never make the podcast tour</span>
+<span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>What nobody clapped for</span>
+</div></div>
+
+<section class="manifesto" id="about" aria-label="About the podcast">
+<div class="manifesto-inner reveal">
+<div class="section-label">Why This Exists</div>
+<p class="manifesto-text">
+Crypto has a thousand shows about the tech, the alpha, the takes.
+<span class="highlight">None of them ask what it actually takes to build it all.</span>
+</p>
+<div class="manifesto-stats">
+<div class="stat"><div class="stat-number">100%</div><div class="stat-label">talk about<br>what got built</div></div>
+<div class="stat"><div class="stat-number">0%</div><div class="stat-label">ask what it feels like<br>to build it</div></div>
+<div class="stat"><div class="stat-number">1</div><div class="stat-label">podcast<br>will</div></div>
+</div>
+</div>
+</section>
+
+<section class="episodes" id="episodes" aria-label="Episodes">
+<div class="episodes-inner">
+<div class="section-label reveal">Upcoming Episodes</div>
+<a class="episode-card reveal" href="#subscribe">
+<div class="ep-number">01</div>
+<div class="ep-info"><div class="ep-title">"I Told Everyone It Was Fine For Six Months"</div><div class="ep-meta"><span>45 min</span><span class="ep-badge">Coming Soon</span></div></div>
+<div class="ep-play"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg></div>
+</a>
+<a class="episode-card reveal" href="#subscribe">
+<div class="ep-number">02</div>
+<div class="ep-info"><div class="ep-title">The Raise That Took Everything Except the Company</div><div class="ep-meta"><span>52 min</span><span class="ep-badge">Coming Soon</span></div></div>
+<div class="ep-play"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg></div>
+</a>
+<a class="episode-card reveal" href="#subscribe">
+<div class="ep-number">03</div>
+<div class="ep-info"><div class="ep-title">Built the Thing. Lost Herself in the Process.</div><div class="ep-meta"><span>38 min</span><span class="ep-badge">Coming Soon</span></div></div>
+<div class="ep-play"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg></div>
+</a>
+</div>
+</section>
+
+<section class="subscribe" id="subscribe" aria-label="Ask a question">
+<div class="subscribe-fingerprint"><svg width="100%" height="100%"><use href="#fp-large"/></svg></div>
+<div class="subscribe-inner reveal">
+<h2>What do you want to <em>know?</em></h2>
+<p style="color:var(--muted);font-size:15px;margin-bottom:0">Keep it meaningful.</p>
+<a href="https://tally.so/r/J966Mo" target="_blank" rel="noopener" data-tally-open="J966Mo" data-tally-layout="modal" data-tally-hide-title="1" class="btn-primary" style="margin-top:16px;padding:18px 40px;font-size:16px;display:inline-block">Submit Your Question</a>
+<p class="subscribe-note" style="margin-top:12px;font-size:10px">Your identity is never collected or stored</p>
+</div>
+</section>
+
+<section class="host">
+<div class="host-inner reveal">
+<div class="host-avatar"><svg><use href="#fp-small"/></svg></div>
+<div class="host-info">
+<h3>Hosted by <a href="https://x.com/Sim_Pop" target="_blank" rel="noopener" class="host-name-link">Simona Pop</a></h3>
+<p class="host-bio">Nine years in crypto, burnout, and a lot of therapy later &#8212; this podcast exists. <em style="white-space:nowrap">The Human Protocol</em> came from realizing that the conversations that actually changed something for me were never the polished ones &#8212; they were the raw ones, when someone finally said what they were really going through. This podcast is those conversations, recorded.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-left"><svg><use href="#fp-small"/></svg>&copy; 2026 The Human Protocol</div>
+<div class="footer-socials">
+<a href="https://x.com/_humanprotocol" target="_blank" rel="noopener" class="footer-x">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+@_humanprotocol
+</a>
+</div>
+</footer>
+
+<div class="float-bar" id="floatBar">
+<div class="waveform">
+<span style="animation-delay:0s;height:8px"></span>
+<span style="animation-delay:.15s;height:16px"></span>
+<span style="animation-delay:.3s;height:24px"></span>
+<span style="animation-delay:.45s;height:12px"></span>
+<span style="animation-delay:.6s;height:20px"></span>
+</div>
+<span class="float-bar-text">Episode 1 drops soon</span>
+<a href="#subscribe" class="btn-primary">Ask a Question</a>
+</div>
+
+<style>
+.asset-page{display:none;position:fixed;top:0;left:0;z-index:9999;background:var(--bg)}
+.asset-page:target{display:flex;align-items:center;justify-content:center}
+.asset-close{position:fixed;top:20px;right:20px;z-index:10000;font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;padding:8px 16px;border:1px solid var(--card-border);border-radius:100px}
+.asset-close:hover{color:var(--fg);border-color:var(--accent)}
+.asset-hint{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:10000;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px}
+</style>
+
+<div class="asset-page" id="asset-profile" style="width:400px;height:400px">
+<a href="#" class="asset-close">✕ close</a>
+<svg width="340" height="340" viewBox="0 0 400 400">
+<g transform="translate(200,200)">
+<path d="M-90 0Q-90-116 0-116Q90-116 90 0Q90 105 0 105Q-90 105-90 0" stroke="#E06030" stroke-width="8" fill="none" opacity="0.3"/>
+<path d="M-72 0Q-72-94 0-94Q72-94 72 0Q72 85 0 85Q-72 85-72 0" stroke="#E06030" stroke-width="8" fill="none" opacity="0.5"/>
+<path d="M-54 0Q-54-70 0-70Q54-70 54 0Q54 63 0 63Q-54 63-54 0" stroke="#E06030" stroke-width="8" fill="none" opacity="0.7"/>
+<path d="M-35 0Q-35-45 0-45Q35-45 35 0Q35 40 0 40Q-35 40-35 0" stroke="#E06030" stroke-width="8" fill="none" opacity="0.85"/>
+<circle cx="0" cy="0" r="15" fill="#E06030"/>
+</g>
+</svg>
+<div class="asset-hint">Cmd+Shift+4 to screenshot</div>
+</div>
+
+<div class="asset-page" id="asset-cover" style="width:1500px;height:500px;flex-direction:column">
+<a href="#" class="asset-close">✕ close</a>
+<div style="font-family:var(--serif);font-size:80px;color:var(--fg);letter-spacing:-2px;line-height:.95;font-weight:400">The Human Protocol</div>
+<div style="font-family:var(--mono);font-size:18px;color:var(--accent);letter-spacing:1px;margin-top:22px;opacity:.9">The personal side of building big things</div>
+<div style="width:180px;height:1px;background:var(--accent);opacity:.25;margin-top:18px"></div>
+<div style="font-family:var(--mono);font-size:15px;color:var(--muted);letter-spacing:1px;margin-top:16px">hosted by Simona Pop</div>
+<div class="asset-hint">Cmd+Shift+4 to screenshot</div>
+</div>
+
+<div class="asset-page" id="asset-spotify" style="width:3000px;height:3000px;flex-direction:column;position:fixed;overflow:hidden">
+<a href="#" class="asset-close">✕ close</a>
+<svg style="position:absolute;top:6%;left:50%;transform:translateX(-50%)" width="1500" height="1900" viewBox="0 0 1500 1900">
+<g transform="translate(750,950)">
+<path d="M-600 0Q-600-780 0-780Q600-780 600 0Q600 715 0 715Q-600 715-600 0" stroke="#E06030" stroke-width="14" fill="none" opacity="0.15"/>
+<path d="M-480 0Q-480-625 0-625Q480-625 480 0Q480 572 0 572Q-480 572-480 0" stroke="#E06030" stroke-width="14" fill="none" opacity="0.22"/>
+<path d="M-360 0Q-360-470 0-470Q360-470 360 0Q360 430 0 430Q-360 430-360 0" stroke="#E06030" stroke-width="14" fill="none" opacity="0.32"/>
+<path d="M-240 0Q-240-312 0-312Q240-312 240 0Q240 286 0 286Q-240 286-240 0" stroke="#E06030" stroke-width="14" fill="none" opacity="0.48"/>
+<path d="M-130 0Q-130-168 0-168Q130-168 130 0Q130 154 0 154Q-130 154-130 0" stroke="#E06030" stroke-width="14" fill="none" opacity="0.65"/>
+<circle cx="0" cy="0" r="45" fill="#E06030" opacity="0.9"/>
+</g>
+</svg>
+<div style="font-family:var(--serif);font-size:260px;color:var(--fg);letter-spacing:-4px;line-height:1.1;text-align:center;font-weight:400;position:relative;z-index:2;margin-top:800px">The Human<br>Protocol</div>
+<div style="font-family:var(--mono);font-size:68px;color:var(--accent);letter-spacing:4px;text-transform:uppercase;margin-top:50px;opacity:.8;position:relative;z-index:2;text-align:center">The personal side of<br>building big things</div>
+<div class="asset-hint">Cmd+Shift+4 to screenshot</div>
+</div>
+
+<script>
+const glow=document.getElementById('cursorGlow');
+document.addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+const observer=new IntersectionObserver(entries=>{entries.forEach((entry,i)=>{if(entry.isIntersecting)setTimeout(()=>entry.target.classList.add('visible'),i*100)})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const floatBar=document.getElementById('floatBar'),subscribeSection=document.getElementById('subscribe');
+window.addEventListener('scroll',()=>{const s=window.scrollY,r=subscribeSection.getBoundingClientRect();if(s>600&&r.top>window.innerHeight)floatBar.classList.add('visible');else floatBar.classList.remove('visible')});
+function handleQuestion(e){e.preventDefault();const q=document.getElementById('questionInput');if(q.value.trim()){document.getElementById('questionForm').style.display='none';document.getElementById('formSuccess').style.display='flex'}}
+</script>
+<script src="https://tally.so/widgets/embed.js"></script>
+</body>
+</html>
