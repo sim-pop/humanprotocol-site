@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.thehumanprotocol.xyz/sitemap.xml
