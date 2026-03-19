@@ -20,10 +20,14 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@Sim_Pop">
+<meta name="twitter:site" content="@_humanprotocol">
 <meta name="twitter:creator" content="@Sim_Pop">
 <meta name="twitter:title" content="The Human Protocol | The Personal Side of Building Big Things">
 <meta name="twitter:description" content="A podcast where builders talk about the messy parts of creating the future. The doubts. The pivots. The conversations that stay offline.">
+<meta name="twitter:image" content="https://www.thehumanprotocol.xyz/og-image.jpg">
+<meta property="og:image" content="https://www.thehumanprotocol.xyz/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -61,6 +65,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 40px;display:fl
 .nav-links a:hover{color:var(--fg)}
 .nav-cta{background:var(--accent)!important;color:var(--fg)!important;padding:8px 20px;border-radius:100px;font-weight:600;font-size:12px!important;letter-spacing:.5px;transition:all .3s!important}
 .nav-cta:hover{background:var(--accent-glow)!important;transform:scale(1.05);box-shadow:0 0 30px rgba(212,95,60,.3)}
+.nav-ens{background:transparent!important;border:1px solid var(--accent)!important;color:var(--accent)!important}
+.nav-ens:hover{background:var(--accent)!important;color:var(--fg)!important}
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:100px 40px 60px;position:relative;overflow:hidden}
 .hero-fingerprint{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;opacity:0;animation:fpReveal 2s .2s forwards}
 @keyframes fpReveal{0%{opacity:0;transform:translate(-50%,-50%) scale(.85)}100%{opacity:1;transform:translate(-50%,-50%) scale(1)}}
@@ -171,6 +177,7 @@ nav{padding:14px 16px}
 .nav-logo{font-size:11px!important;letter-spacing:2px!important}
 .nav-logo svg{width:16px;height:16px}
 .nav-links a:not(.nav-cta){display:none}
+.nav-ens{display:none}
 .nav-x{font-size:11px!important}
 .hero{padding:100px 24px 80px}
 .hero-fingerprint{width:400px;height:400px}
@@ -229,6 +236,7 @@ footer{flex-direction:column;gap:16px;text-align:center}
 <a href="#episodes">Episodes</a>
 <a href="#about">About</a>
 <a href="https://x.com/_humanprotocol" target="_blank" rel="noopener" class="nav-cta nav-x">𝕏 Follow</a>
+<a href="https://etherscan.io/address/0x4ed7d8b1B3968FAA1862B3e33d4a806E3745920c" target="_blank" rel="noopener" class="nav-cta nav-ens">thehumanprotocol.eth</a>
 </div>
 </nav>
 
@@ -238,7 +246,7 @@ footer{flex-direction:column;gap:16px;text-align:center}
 <p class="hero-sub-mono">Where builders talk about the messy parts of creating the future.</p>
 <div class="hero-actions">
 <a href="https://x.com/_humanprotocol" target="_blank" rel="noopener" class="btn-primary">Get Early Access</a>
-<a href="#episodes" class="btn-secondary">Preview Episodes</a>
+<a href="#subscribe" class="btn-secondary">Subscribe</a>
 </div>
 </div>
 </section>
@@ -265,11 +273,11 @@ footer{flex-direction:column;gap:16px;text-align:center}
 <div class="section-label">Why This Exists</div>
 <p class="manifesto-text">
 Crypto has a thousand shows about the tech, the alpha, the takes.
-<span class="highlight">None of them ask what it actually takes to build it all.</span>
+<span class="highlight">None of them tell the story of the person behind it all.</span>
 </p>
 <div class="manifesto-stats">
 <div class="stat"><div class="stat-number">100%</div><div class="stat-label">talk about<br>what got built</div></div>
-<div class="stat"><div class="stat-number">0%</div><div class="stat-label">ask what it feels like<br>to build it</div></div>
+<div class="stat"><div class="stat-number">0%</div><div class="stat-label">tell the story of<br>who built it</div></div>
 <div class="stat"><div class="stat-number">1</div><div class="stat-label">podcast<br>will</div></div>
 </div>
 </div>
