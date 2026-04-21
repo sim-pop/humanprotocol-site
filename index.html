@@ -9,7 +9,7 @@
 <meta name="author" content="Simona Pop">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.thehumanprotocol.xyz/">
- 
+
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.thehumanprotocol.xyz/">
@@ -17,7 +17,7 @@
 <meta property="og:description" content="A podcast where builders talk about the messy parts of creating the future. The doubts. The pivots. The conversations that stay offline. Hosted by Simona Pop.">
 <meta property="og:site_name" content="The Human Protocol">
 <meta property="og:locale" content="en_US">
- 
+
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@_humanprotocol">
@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://www.thehumanprotocol.xyz/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
- 
+
 <!-- Structured Data -->
 <script type="application/ld+json">
 {
@@ -46,7 +46,7 @@
   "inLanguage": "en"
 }
 </script>
- 
+
 <!-- Favicon (fingerprint) -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M 8 20 Q 8 5 20 5 Q 32 5 32 20 Q 32 34 20 34 Q 8 34 8 20' stroke='%23D45F3C' stroke-width='2.5' fill='none' opacity='0.5'/%3E%3Cpath d='M 12 20 Q 12 9 20 9 Q 28 9 28 20 Q 28 30 20 30 Q 12 30 12 20' stroke='%23D45F3C' stroke-width='2.5' fill='none' opacity='0.7'/%3E%3Cpath d='M 16 20 Q 16 13 20 13 Q 24 13 24 20 Q 24 26 20 26 Q 16 26 16 20' stroke='%23D45F3C' stroke-width='2.5' fill='none' opacity='0.85'/%3E%3Ccircle cx='20' cy='20' r='3' fill='%23D45F3C'/%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -173,39 +173,48 @@ footer{padding:40px;border-top:1px solid var(--card-border);display:flex;justify
 .form-success{display:none;align-items:center;justify-content:center;gap:12px;padding:20px;color:var(--accent);font-weight:600;font-size:16px;animation:fadeUp .5s forwards}
 .form-success svg{width:24px;height:24px}
 @media(max-width:768px){
-nav{padding:14px 16px}
-.nav-logo{font-size:11px!important;letter-spacing:2px!important}
+nav{padding:12px 16px}
+.nav-logo{font-size:10px!important;letter-spacing:1.5px!important}
 .nav-logo svg{width:16px;height:16px}
+.nav-links{gap:12px}
 .nav-links a:not(.nav-cta){display:none}
-.nav-ens{font-size:10px!important;padding:6px 12px!important}
-.nav-x{font-size:11px!important}
-.hero{padding:100px 24px 80px}
-.hero-fingerprint{width:400px;height:400px}
-.hero h1{letter-spacing:-1px}
+.nav-subscribe{font-size:10px!important;padding:6px 14px!important}
+.nav-ens{font-size:9px!important;padding:5px 10px!important}
+.hero{padding:90px 20px 60px}
+.hero-fingerprint{width:350px;height:350px}
+.hero h1{letter-spacing:-1px;font-size:clamp(2.8rem,10vw,4rem)!important}
 .hero-sub-mono{max-width:90%;font-size:1rem!important}
-.manifesto{padding:80px 24px}
-.manifesto-text{font-size:1.6rem!important}
+.hero-actions{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:10px}
+.hero-actions .btn-primary,.hero-actions .btn-secondary{padding:12px 24px;font-size:13px}
+.ticker-item{font-size:11px;letter-spacing:.5px}
+.manifesto{padding:60px 20px}
+.manifesto-text{font-size:1.5rem!important}
 .manifesto-stats{grid-template-columns:1fr}
-.stat{padding:28px 20px}
-.stat-number{font-size:2.2rem}
-.episodes{padding:80px 24px}
-.episode-card{grid-template-columns:50px 1fr 40px;gap:16px;padding:24px 0}
-.ep-number{font-size:1.5rem}
-.ep-title{font-size:1.1rem}
-.subscribe{padding:80px 24px}
+.stat{padding:24px 16px}
+.stat-number{font-size:2rem}
+.episodes{padding:60px 20px}
+.episode-card{grid-template-columns:45px 1fr 36px;gap:12px;padding:20px 0}
+.ep-number{font-size:1.3rem}
+.ep-title{font-size:1rem}
+.ep-play{width:36px;height:36px}
+.ep-play svg{width:12px;height:12px}
+.subscribe{padding:60px 20px}
+.subscribe h2{font-size:clamp(2rem,6vw,3rem)!important}
 .email-form{flex-direction:column;border-radius:16px}
 .email-form button{border-radius:100px}
 .subscribe-platforms{flex-wrap:wrap}
-.host-inner{grid-template-columns:1fr;justify-items:center;text-align:center}
-.host-avatar{width:120px;height:120px}
-footer{flex-direction:column;gap:16px;text-align:center}
+.host{padding:80px 20px}
+.host-inner{grid-template-columns:1fr;justify-items:center;text-align:center;gap:24px}
+.host-avatar{width:100px;height:100px}
+.host-avatar svg{width:80px;height:80px}
+.host-bio{font-size:14px}
+footer{flex-direction:column;gap:16px;text-align:center;padding:30px 20px}
 .footer-socials{justify-content:center}
-.float-bar{left:12px;right:12px;bottom:12px;transform:translateX(0) translateY(120px);padding:10px 10px 10px 16px;gap:10px;justify-content:center}
+.float-bar{left:12px;right:12px;bottom:12px;transform:translateX(0) translateY(120px);padding:8px 8px 8px 16px;gap:8px;justify-content:center}
 .float-bar.visible{transform:translateX(0) translateY(0)}
 .float-bar-text{font-size:12px}
 .float-bar .btn-primary{padding:10px 18px;font-size:12px;white-space:nowrap}
 .waveform{display:none}
-.hero-actions{flex-direction:column;align-items:center}
 }
 </style>
 </head>
@@ -230,17 +239,17 @@ footer{flex-direction:column;gap:16px;text-align:center}
 </g>
 </symbol>
 </defs></svg>
- 
+
 <nav>
 <a href="#" class="nav-logo"><svg><use href="#fp-small"/></svg>The Human Protocol</a>
 <div class="nav-links">
 <a href="#episodes">Episodes</a>
 <a href="#about">About</a>
-<a href="https://x.com/_humanprotocol" target="_blank" rel="noopener" class="nav-cta nav-x">𝕏 Follow</a>
+<a href="https://www.youtube.com/@TheHumanProtocolPod" target="_blank" rel="noopener" class="nav-cta nav-subscribe">Subscribe</a>
 <a href="https://etherscan.io/address/0x4ed7d8b1B3968FAA1862B3e33d4a806E3745920c" target="_blank" rel="noopener" class="nav-cta nav-ens">thehumanprotocol.eth</a>
 </div>
 </nav>
- 
+
 <section class="hero" aria-label="Hero">
 <div class="hero-fingerprint"><svg><use href="#fp-large"/></svg></div>
 <h1>The <em>personal</em> side of building big things</h1>
@@ -252,7 +261,7 @@ footer{flex-direction:column;gap:16px;text-align:center}
 </div>
 </div>
 </section>
- 
+
 <div class="ticker"><div class="ticker-track">
 <span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>The call where you almost quit</span>
 <span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>What burnout sounds like out loud</span>
@@ -269,7 +278,7 @@ footer{flex-direction:column;gap:16px;text-align:center}
 <span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>Conversations that never make the podcast tour</span>
 <span class="ticker-item"><svg class="fp-dot"><use href="#fp-small"/></svg>What nobody clapped for</span>
 </div></div>
- 
+
 <section class="manifesto" id="about" aria-label="About the podcast">
 <div class="manifesto-inner reveal">
 <div class="section-label">Why This Exists</div>
@@ -284,7 +293,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 </div>
 </div>
 </section>
- 
+
 <section class="episodes" id="episodes" aria-label="Episodes">
 <div class="episodes-inner">
 <div class="section-label reveal">Episodes</div>
@@ -300,7 +309,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 </a>
 </div>
 </section>
- 
+
 <section class="subscribe" id="subscribe" aria-label="Ask a question">
 <div class="subscribe-fingerprint"><svg width="100%" height="100%"><use href="#fp-large"/></svg></div>
 <div class="subscribe-inner reveal">
@@ -310,7 +319,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 <p class="subscribe-note" style="margin-top:12px;font-size:10px">Your identity is never collected or stored</p>
 </div>
 </section>
- 
+
 <section class="host">
 <div class="host-inner reveal">
 <div class="host-avatar"><svg><use href="#fp-small"/></svg></div>
@@ -320,7 +329,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 </div>
 </div>
 </section>
- 
+
 <footer>
 <div class="footer-left"><svg><use href="#fp-small"/></svg>&copy; 2026 The Human Protocol</div>
 <div class="footer-socials">
@@ -330,7 +339,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 </a>
 </div>
 </footer>
- 
+
 <div class="float-bar" id="floatBar">
 <div class="waveform">
 <span style="animation-delay:0s;height:8px"></span>
@@ -342,7 +351,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 <span class="float-bar-text">Episodes are live</span>
 <a href="#subscribe" class="btn-primary">Ask a Question</a>
 </div>
- 
+
 <style>
 .asset-page{display:none;position:fixed;top:0;left:0;z-index:9999;background:var(--bg)}
 .asset-page:target{display:flex;align-items:center;justify-content:center}
@@ -350,7 +359,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 .asset-close:hover{color:var(--fg);border-color:var(--accent)}
 .asset-hint{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:10000;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px}
 </style>
- 
+
 <div class="asset-page" id="asset-profile" style="width:400px;height:400px">
 <a href="#" class="asset-close">✕ close</a>
 <svg width="340" height="340" viewBox="0 0 400 400">
@@ -364,7 +373,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 </svg>
 <div class="asset-hint">Cmd+Shift+4 to screenshot</div>
 </div>
- 
+
 <div class="asset-page" id="asset-cover" style="width:1500px;height:500px;flex-direction:column">
 <a href="#" class="asset-close">✕ close</a>
 <div style="font-family:var(--serif);font-size:80px;color:var(--fg);letter-spacing:-2px;line-height:.95;font-weight:400">The Human Protocol</div>
@@ -373,7 +382,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 <div style="font-family:var(--mono);font-size:15px;color:var(--muted);letter-spacing:1px;margin-top:16px">hosted by Simona Pop</div>
 <div class="asset-hint">Cmd+Shift+4 to screenshot</div>
 </div>
- 
+
 <div class="asset-page" id="asset-spotify" style="width:3000px;height:3000px;flex-direction:column;position:fixed;overflow:hidden">
 <a href="#" class="asset-close">✕ close</a>
 <svg style="position:absolute;top:6%;left:50%;transform:translateX(-50%)" width="1500" height="1900" viewBox="0 0 1500 1900">
@@ -390,7 +399,7 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 <div style="font-family:var(--mono);font-size:68px;color:var(--accent);letter-spacing:4px;text-transform:uppercase;margin-top:50px;opacity:.8;position:relative;z-index:2;text-align:center">The personal side of<br>building big things</div>
 <div class="asset-hint">Cmd+Shift+4 to screenshot</div>
 </div>
- 
+
 <script>
 const glow=document.getElementById('cursorGlow');
 document.addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
