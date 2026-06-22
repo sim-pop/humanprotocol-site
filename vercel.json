@@ -26,12 +26,6 @@
       "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/profile",
-      "destination": "/"
-    }
-  ],
   "cleanUrls": true,
   "trailingSlash": false
 }
