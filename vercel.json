@@ -29,7 +29,7 @@
   "rewrites": [
     {
       "source": "/profile",
-      "destination": "/profile.html"
+      "destination": "/"
     }
   ],
   "cleanUrls": true,
