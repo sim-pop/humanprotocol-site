@@ -224,6 +224,47 @@ footer{flex-direction:column;gap:16px;text-align:center;padding:30px 20px}
 .float-bar .btn-primary{padding:10px 18px;font-size:12px;white-space:nowrap}
 .waveform{display:none}
 }
+
+/* Profile page styles */
+.profile-hero{padding:120px 40px 80px;max-width:860px;margin:0 auto}
+.profile-hero h1{font-family:var(--serif);font-size:3.5rem;font-weight:300;letter-spacing:-1.5px;line-height:1.1;margin-bottom:8px}
+.profile-hero h1 em{color:var(--accent);font-style:italic}
+.profile-intro{font-size:17px;color:var(--muted);line-height:1.8;margin-top:24px;max-width:720px}
+.profile-intro strong{color:var(--accent);font-weight:400}
+.profile-section{padding:60px 40px;max-width:860px;margin:0 auto}
+.profile-section + .profile-section{border-top:1px solid var(--card-border)}
+.section-eyebrow{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:32px}
+.work-grid{display:grid;gap:32px}
+.work-item h3{font-family:var(--serif);font-size:1.4rem;font-weight:300;letter-spacing:-.5px;margin-bottom:8px}
+.work-item p{font-size:15px;color:var(--muted);line-height:1.7}
+.work-item .work-orgs{font-size:13px;color:var(--muted);margin-top:6px;font-style:italic}
+.work-item .work-orgs a{color:var(--accent);text-decoration:none}
+.work-item .work-orgs a:hover{opacity:.7}
+.org-list{display:flex;flex-wrap:wrap;gap:12px}
+.org-tag{padding:8px 20px;border:1px solid var(--card-border);border-radius:100px;font-size:13px;color:var(--muted);letter-spacing:.5px;text-decoration:none;transition:all .2s}
+a.org-tag:hover{border-color:var(--accent);color:var(--accent);opacity:1}
+.talk-list{display:grid;gap:12px}
+.talk-item{padding:16px 0;border-bottom:1px solid var(--card-border);font-family:var(--serif);font-size:1.1rem;font-weight:300;letter-spacing:-.3px}
+.talk-item:first-child{border-top:1px solid var(--card-border)}
+.talk-item a{color:var(--fg)}
+.talk-item a:hover{color:var(--accent);opacity:1}
+.source-group{margin-bottom:40px}
+.source-group:last-child{margin-bottom:0}
+.source-group h3{font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:16px;color:var(--fg)}
+.source-list{display:grid;gap:8px}
+.source-list a{font-size:14px;color:var(--muted);display:block;padding:8px 0;border-bottom:1px solid rgba(154,141,128,.06);transition:all .2s}
+.source-list a:hover{color:var(--accent);padding-left:8px;opacity:1}
+.media-list{display:flex;flex-wrap:wrap;gap:12px}
+.media-tag{padding:8px 20px;border:1px solid var(--card-border);border-radius:100px;font-size:13px;color:var(--muted)}
+.theme-list{display:flex;flex-wrap:wrap;gap:10px}
+.theme-tag{padding:6px 16px;border-radius:100px;background:var(--card-bg);font-size:12px;color:var(--muted);letter-spacing:.5px}
+.profile-hero{padding:90px 20px 60px}
+.profile-hero h1{font-size:2.4rem}
+.profile-intro{font-size:15px}
+.profile-section{padding:40px 20px}
+.org-list,.media-list,.theme-list{gap:8px}
+.org-tag,.media-tag{padding:6px 14px;font-size:12px}
+#profile-content{display:none;padding-top:20px}
 </style>
 </head>
 <body>
@@ -249,15 +290,16 @@ footer{flex-direction:column;gap:16px;text-align:center;padding:30px 20px}
 </defs></svg>
 
 <nav>
-<a href="#" class="nav-logo"><svg><use href="#fp-small"/></svg>Human Protocol</a>
+<a href="/" class="nav-logo" onclick="if(window.location.pathname==='/'){event.preventDefault();window.scrollTo({top:0,behavior:'smooth'})}"><svg><use href="#fp-small"/></svg>Human Protocol</a>
 <div class="nav-links">
-<a href="#episodes">Episodes</a>
-<a href="/profile">SP Bio</a>
+<a href="/#episodes" id="nav-episodes">Episodes</a>
+<a href="/profile" id="nav-bio" onclick="event.preventDefault();showProfile()">SP Bio</a>
 <a href="https://www.youtube.com/@HumanProtocolPod" target="_blank" rel="noopener" class="nav-cta nav-subscribe">Subscribe</a>
 <a href="https://etherscan.io/address/0x4ed7d8b1B3968FAA1862B3e33d4a806E3745920c" target="_blank" rel="noopener" class="nav-cta nav-ens">thehumanprotocol.eth</a>
 </div>
 </nav>
 
+<div id="main-content">
 <section class="hero" aria-label="Hero">
 <div class="hero-fingerprint"><svg><use href="#fp-large"/></svg></div>
 <h1>The <em>personal</em> side of building big things</h1>
@@ -362,6 +404,165 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 </div>
 </section>
 
+</div><!-- end main-content -->
+
+<div id="profile-content">
+<section class="profile-hero">
+<h1>Simona <em>Pop</em></h1>
+<p class="profile-intro">Romanian-born British <strong>entrepreneur</strong>, <strong>governance strategist</strong>, <strong>community builder</strong>, <strong>conference producer</strong>, <strong>facilitator</strong>, and <strong>public speaker</strong> working at the intersection of decentralized governance, public goods, open coordination, and human flourishing.</p>
+<p class="profile-intro" style="margin-top:16px">Over the past decade she has helped build institutions, communities, governance systems, conferences, and funding mechanisms across the Ethereum ecosystem. Rather than focusing on any single organization, her work has consistently explored how people can coordinate more effectively, build resilient communities, and design healthier internet cultures.</p>
+</section>
+
+<section class="profile-section">
+<div class="section-eyebrow">Areas of Work</div>
+<div class="work-grid">
+
+<div class="work-item">
+<h3>Governance &amp; Institutional Design</h3>
+<p>Helping decentralized organizations evolve through governance design, stewardship, facilitation, and institutional development.</p>
+<p class="work-orgs"><a href="https://gov.gitcoin.co" target="_blank">Gitcoin</a>, <a href="https://discuss.ens.domains" target="_blank">ENS DAO</a>, <a href="https://gov.optimism.io" target="_blank">Optimism</a>, <a href="https://x.com/delv_tech" target="_blank">Element</a>, <a href="https://superrare.com" target="_blank">SuperRare DAO</a></p>
+</div>
+
+<div class="work-item">
+<h3>Public Goods</h3>
+<p>Designing funding mechanisms, stewardship structures, and community processes that support shared digital infrastructure.</p>
+<p class="work-orgs"><a href="https://gov.gitcoin.co" target="_blank">Gitcoin</a>, <a href="https://basics.ensdao.org/public-goods" target="_blank">ENS Public Goods Working Group</a></p>
+</div>
+
+<div class="work-item">
+<h3>Community Building &amp; Ecosystem Growth</h3>
+<p>Growing healthy contributor communities through onboarding, education, relationship building, and ecosystem development.</p>
+<p class="work-orgs"><a href="https://status.im" target="_blank">Status</a>, <a href="https://decrypt.co/6554/bounties-network-co-founder-simona-pop-interview" target="_blank">Bounties Network</a> (Co-founder)</p>
+</div>
+
+<div class="work-item">
+<h3>Conference Architecture &amp; Design</h3>
+<p>Designing conferences as coordination systems through curation, facilitation, narrative design, and cultural programming.</p>
+<p class="work-orgs"><a href="https://cryptoslate.com/press-releases/liscon-an-inaugural-ethereum-event-will-come-to-lisbon-in-october/" target="_blank">LisCon</a>, <a href="https://schellingpoint.gitcoin.co" target="_blank">Schelling Point</a>, <a href="https://devcon.org" target="_blank">Devcon</a>, <a href="https://ethdenver.com" target="_blank">ETHDenver</a>, <a href="https://devconnect.org" target="_blank">Devconnect</a></p>
+</div>
+
+</div>
+</section>
+
+<section class="profile-section">
+<div class="section-eyebrow">Organizations</div>
+<div class="org-list">
+<a href="https://decrypt.co/6554/bounties-network-co-founder-simona-pop-interview" target="_blank" rel="noopener" class="org-tag">Bounties Network (Co-founder)</a>
+<a href="https://status.im" target="_blank" rel="noopener" class="org-tag">Status</a>
+<a href="https://gov.gitcoin.co" target="_blank" rel="noopener" class="org-tag">Gitcoin DAO</a>
+<a href="https://discuss.ens.domains" target="_blank" rel="noopener" class="org-tag">ENS DAO</a>
+<a href="https://gov.optimism.io" target="_blank" rel="noopener" class="org-tag">Optimism</a>
+<a href="https://x.com/delv_tech" target="_blank" rel="noopener" class="org-tag">Element</a>
+<a href="https://superrare.com" target="_blank" rel="noopener" class="org-tag">SuperRare DAO</a>
+<a href="https://www.thehumanprotocol.xyz" target="_blank" rel="noopener" class="org-tag">Human Protocol</a>
+<a href="https://cryptoslate.com/press-releases/liscon-an-inaugural-ethereum-event-will-come-to-lisbon-in-october/" target="_blank" rel="noopener" class="org-tag">LisCon</a>
+<a href="https://schellingpoint.gitcoin.co" target="_blank" rel="noopener" class="org-tag">Schelling Point</a>
+</div>
+</section>
+
+<section class="profile-section">
+<div class="section-eyebrow">Selected Talks</div>
+<div class="talk-list">
+<div class="talk-item"><a href="https://archive.devcon.org/devcon-6/daos-and-biomimicry" target="_blank" rel="noopener">DAOs and Biomimicry</a></div>
+<div class="talk-item"><a href="https://archive.devcon.org/devcon-7/cultivating-culture-in-web3-preserving-the-essence-as-we-evolve/" target="_blank" rel="noopener">Cultivating Culture in Web3</a></div>
+<div class="talk-item"><a href="https://app.devcon.org/schedule/LUKWAM" target="_blank" rel="noopener">You Know What's Going to Get Us From Web2 to Web3? Therapy</a></div>
+<div class="talk-item"><a href="https://www.youtube.com/watch?v=NbD9K049dN8" target="_blank" rel="noopener">Lessons Learned on DAO Governance</a></div>
+<div class="talk-item"><a href="https://www.youtube.com/watch?v=0zbGRIxKV38" target="_blank" rel="noopener">Human Protocol Podcast Launch — with Stani Kulechov</a></div>
+</div>
+</section>
+
+<section class="profile-section">
+<div class="section-eyebrow">Themes</div>
+<div class="theme-list">
+<span class="theme-tag">Decentralized governance</span>
+<span class="theme-tag">Public goods</span>
+<span class="theme-tag">Open coordination</span>
+<span class="theme-tag">Institutional design</span>
+<span class="theme-tag">Community building</span>
+<span class="theme-tag">Education</span>
+<span class="theme-tag">Conference production</span>
+<span class="theme-tag">Regenerative systems</span>
+</div>
+</section>
+
+<section class="profile-section">
+<div class="section-eyebrow">Featured In</div>
+<div class="media-list">
+<span class="media-tag">Bankless</span>
+<span class="media-tag">Forbes</span>
+<span class="media-tag">BBC Future</span>
+<span class="media-tag">Decrypt</span>
+<span class="media-tag">Devcon</span>
+<span class="media-tag">EthCC</span>
+</div>
+</section>
+
+<section class="profile-section">
+<div class="section-eyebrow">Source Links</div>
+
+<div class="source-group">
+<h3>Governance &amp; Institutional Design</h3>
+<div class="source-list">
+<a href="https://gov.optimism.io/t/the-collective-feedback-commission-the-next-iteration/9113" target="_blank" rel="noopener">Optimism — Collective Feedback Commission: The Next Iteration</a>
+<a href="https://gov.optimism.io/t/collective-feedback-commission-communication-thread/9270" target="_blank" rel="noopener">Optimism — Collective Feedback Commission Communication Thread</a>
+<a href="https://discuss.ens.domains/t/ens-dao-delegate-applications/815/444" target="_blank" rel="noopener">ENS DAO — Delegate Applications</a>
+<a href="https://gov.gitcoin.co/t/gitcoin-dao-governance-process-v2-updated/7860/1" target="_blank" rel="noopener">Gitcoin DAO — Governance Process v2</a>
+<a href="https://gov.gitcoin.co/t/introducing-the-steward-council/9485/1" target="_blank" rel="noopener">Gitcoin DAO — Introducing the Steward Council</a>
+<a href="https://archive.devcon.org/devcon-6/daos-and-biomimicry" target="_blank" rel="noopener">Devcon — DAOs and Biomimicry</a>
+<a href="https://ethcc.io/archives/biomimicry-in-daos" target="_blank" rel="noopener">EthCC — Biomimicry in DAOs</a>
+</div>
+</div>
+
+<div class="source-group">
+<h3>Public Goods</h3>
+<div class="source-list">
+<a href="https://www.bbc.com/future/article/20190613-a-simple-online-system-that-could-end-plastic-pollution" target="_blank" rel="noopener">BBC Future — A simple online system that could end plastic pollution</a>
+<a href="https://discuss.ens.domains/t/ens-public-goods-working-group-term-6-2025-report/21689?u=simona_pop" target="_blank" rel="noopener">ENS DAO — Public Goods Working Group Term 6 Report</a>
+<a href="https://gov.gitcoin.co/t/gitcoin-mission-vision/9421/1" target="_blank" rel="noopener">Gitcoin — Mission &amp; Vision</a>
+<a href="https://gov.gitcoin.co/t/gitcoin-dao-workstream-accountability-flow/9644/1" target="_blank" rel="noopener">Gitcoin DAO — Workstream Accountability Flow</a>
+</div>
+</div>
+
+<div class="source-group">
+<h3>Community Building &amp; Ecosystem Growth</h3>
+<div class="source-list">
+<a href="https://www.bankless.com/the-explorer-mindset-with-simona" target="_blank" rel="noopener">Bankless — The Explorer Mindset with Simona Pop</a>
+<a href="https://decrypt.co/6554/bounties-network-co-founder-simona-pop-interview" target="_blank" rel="noopener">Decrypt — Bounties Network co-founder interview</a>
+<a href="https://www.forbes.com/sites/jeffersonnunn/2019/02/19/bitcoins-emerging-gig-economy/" target="_blank" rel="noopener">Forbes — Bitcoin's Emerging Gig Economy</a>
+<a href="https://medium.com/omnisparx/11-questions-for-blockchain-community-manager-simona-pop-3b975be474b5" target="_blank" rel="noopener">Omnisparx — 11 Questions for Blockchain Community Manager Simona Pop</a>
+<a href="https://blockcerts.com/blog/blockchain-a-week-in-review-march-25-2019/" target="_blank" rel="noopener">Blockcerts — Blockchain: A Week in Review</a>
+</div>
+</div>
+
+<div class="source-group">
+<h3>Conference Architecture &amp; Design</h3>
+<div class="source-list">
+<a href="https://cryptoslate.com/press-releases/liscon-an-inaugural-ethereum-event-will-come-to-lisbon-in-october/" target="_blank" rel="noopener">CryptoSlate — LisCon inaugural Ethereum event</a>
+<a href="https://schellingpoint.gitcoin.co" target="_blank" rel="noopener">Schelling Point — Official site</a>
+</div>
+</div>
+
+<div class="source-group">
+<h3>Web3 Culture &amp; Psychology</h3>
+<div class="source-list">
+<a href="https://www.decential.io/articles/at-ethcc-getting-away-from-keyboard-to-become-better-online-citizens" target="_blank" rel="noopener">Decential — Getting Away From Keyboard to Become Better Online Citizens</a>
+<a href="https://app.devcon.org/schedule/LUKWAM" target="_blank" rel="noopener">Devcon SEA — You know what's going to get us from web2 to web3? Therapy</a>
+<a href="https://archive.devcon.org/devcon-7/cultivating-culture-in-web3-preserving-the-essence-as-we-evolve/" target="_blank" rel="noopener">Devcon — Cultivating Culture in Web3</a>
+<a href="https://pop.mirror.xyz/NbNlmtjw3hTzVHiCU9dBjcgFDxpD91UY8DOtl5Ht_x0" target="_blank" rel="noopener">Mirror — Biomimicry, DAOs, coordination and governance</a>
+</div>
+</div>
+
+<div class="source-group">
+<h3>Writing</h3>
+<div class="source-list">
+<a href="https://thenextweb.com/author/simona-pop" target="_blank" rel="noopener">The Next Web — Author page</a>
+<a href="https://medium.com/@Sim_Pop" target="_blank" rel="noopener">Medium — @Sim_Pop</a>
+</div>
+</div>
+
+</section>
+</div>
+
 <footer>
 <div class="footer-left"><svg><use href="#fp-small"/></svg>&copy; 2026 Human Protocol</div>
 <div class="footer-socials">
@@ -390,6 +591,47 @@ Crypto has a thousand shows about the tech, the alpha, the takes.
 .asset-close{position:fixed;top:20px;right:20px;z-index:10000;font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;padding:8px 16px;border:1px solid var(--card-border);border-radius:100px}
 .asset-close:hover{color:var(--fg);border-color:var(--accent)}
 .asset-hint{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:10000;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px}
+
+/* Profile page styles */
+.profile-hero{padding:120px 40px 80px;max-width:860px;margin:0 auto}
+.profile-hero h1{font-family:var(--serif);font-size:3.5rem;font-weight:300;letter-spacing:-1.5px;line-height:1.1;margin-bottom:8px}
+.profile-hero h1 em{color:var(--accent);font-style:italic}
+.profile-intro{font-size:17px;color:var(--muted);line-height:1.8;margin-top:24px;max-width:720px}
+.profile-intro strong{color:var(--accent);font-weight:400}
+.profile-section{padding:60px 40px;max-width:860px;margin:0 auto}
+.profile-section + .profile-section{border-top:1px solid var(--card-border)}
+.section-eyebrow{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:32px}
+.work-grid{display:grid;gap:32px}
+.work-item h3{font-family:var(--serif);font-size:1.4rem;font-weight:300;letter-spacing:-.5px;margin-bottom:8px}
+.work-item p{font-size:15px;color:var(--muted);line-height:1.7}
+.work-item .work-orgs{font-size:13px;color:var(--muted);margin-top:6px;font-style:italic}
+.work-item .work-orgs a{color:var(--accent);text-decoration:none}
+.work-item .work-orgs a:hover{opacity:.7}
+.org-list{display:flex;flex-wrap:wrap;gap:12px}
+.org-tag{padding:8px 20px;border:1px solid var(--card-border);border-radius:100px;font-size:13px;color:var(--muted);letter-spacing:.5px;text-decoration:none;transition:all .2s}
+a.org-tag:hover{border-color:var(--accent);color:var(--accent);opacity:1}
+.talk-list{display:grid;gap:12px}
+.talk-item{padding:16px 0;border-bottom:1px solid var(--card-border);font-family:var(--serif);font-size:1.1rem;font-weight:300;letter-spacing:-.3px}
+.talk-item:first-child{border-top:1px solid var(--card-border)}
+.talk-item a{color:var(--fg)}
+.talk-item a:hover{color:var(--accent);opacity:1}
+.source-group{margin-bottom:40px}
+.source-group:last-child{margin-bottom:0}
+.source-group h3{font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:16px;color:var(--fg)}
+.source-list{display:grid;gap:8px}
+.source-list a{font-size:14px;color:var(--muted);display:block;padding:8px 0;border-bottom:1px solid rgba(154,141,128,.06);transition:all .2s}
+.source-list a:hover{color:var(--accent);padding-left:8px;opacity:1}
+.media-list{display:flex;flex-wrap:wrap;gap:12px}
+.media-tag{padding:8px 20px;border:1px solid var(--card-border);border-radius:100px;font-size:13px;color:var(--muted)}
+.theme-list{display:flex;flex-wrap:wrap;gap:10px}
+.theme-tag{padding:6px 16px;border-radius:100px;background:var(--card-bg);font-size:12px;color:var(--muted);letter-spacing:.5px}
+.profile-hero{padding:90px 20px 60px}
+.profile-hero h1{font-size:2.4rem}
+.profile-intro{font-size:15px}
+.profile-section{padding:40px 20px}
+.org-list,.media-list,.theme-list{gap:8px}
+.org-tag,.media-tag{padding:6px 14px;font-size:12px}
+#profile-content{display:none;padding-top:20px}
 </style>
 
 <div class="asset-page" id="asset-profile" style="width:400px;height:400px">
@@ -442,5 +684,30 @@ window.addEventListener('scroll',()=>{const s=window.scrollY,r=subscribeSection.
 function handleQuestion(e){e.preventDefault();const q=document.getElementById('questionInput');if(q.value.trim()){document.getElementById('questionForm').style.display='none';document.getElementById('formSuccess').style.display='flex'}}
 </script>
 <script src="https://tally.so/widgets/embed.js"></script>
+
+<script>
+function showProfile(){
+  document.getElementById('main-content').style.display='none';
+  document.getElementById('profile-content').style.display='block';
+  document.getElementById('floatBar').style.display='none';
+  document.title='Simona Pop — Human Protocol';
+  history.pushState(null,'','/profile');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function showHome(){
+  document.getElementById('main-content').style.display='block';
+  document.getElementById('profile-content').style.display='none';
+  document.getElementById('floatBar').style.display='';
+  document.title='Human Protocol | The Personal Side of Building Big Things';
+  history.pushState(null,'','/');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+window.addEventListener('popstate',function(){
+  if(window.location.pathname==='/profile'){showProfile()}else{showHome()}
+});
+if(window.location.pathname==='/profile'){
+  document.addEventListener('DOMContentLoaded',function(){showProfile()});
+}
+</script>
 </body>
 </html>
