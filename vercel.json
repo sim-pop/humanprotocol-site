@@ -26,6 +26,12 @@
       "permanent": true
     }
   ],
+  "rewrites": [
+    {
+      "source": "/profile",
+      "destination": "/profile.html"
+    }
+  ],
   "cleanUrls": true,
   "trailingSlash": false
 }
