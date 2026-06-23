@@ -55,8 +55,8 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:18px 4
 .work-item .work-orgs a:hover{opacity:.7}
 
 /* Organizations */
-.org-list{display:flex;flex-wrap:wrap;gap:12px}
-.org-tag{padding:8px 20px;border:1px solid var(--card-border);border-radius:100px;font-size:13px;color:var(--muted);letter-spacing:.5px;text-decoration:none;transition:all .2s}
+.org-list{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:10px;max-width:760px}
+.org-tag{padding:7px 16px;border:1px solid var(--card-border);border-radius:100px;font-size:12px;color:var(--muted);letter-spacing:.3px;text-decoration:none;transition:all .2s}
 a.org-tag:hover{border-color:var(--accent);color:var(--accent);opacity:1}
 
 /* Talks */
