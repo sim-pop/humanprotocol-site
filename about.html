@@ -45,8 +45,8 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:18px 4
 .work-item .work-orgs{font-size:13px;color:var(--muted);margin-top:6px;font-style:italic}
 .work-item .work-orgs a{color:var(--accent);text-decoration:none}
 .work-item .work-orgs a:hover{opacity:.7}
-.org-list{display:flex;flex-wrap:wrap;gap:12px}
-.org-tag{padding:8px 20px;border:1px solid var(--card-border);border-radius:100px;font-size:13px;color:var(--muted);letter-spacing:.5px;text-decoration:none;transition:all .2s}
+.org-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,auto));gap:12px}
+.org-tag{padding:8px 20px;border:1px solid var(--card-border);border-radius:100px;font-size:13px;color:var(--muted);letter-spacing:.5px;text-decoration:none;transition:all .2s;text-align:center;white-space:nowrap}
 a.org-tag:hover{border-color:var(--accent);color:var(--accent);opacity:1}
 .talk-list{display:grid;gap:0}
 .talk-item{padding:14px 0;border-bottom:1px solid var(--card-border);font-family:var(--serif);font-size:1.1rem;font-weight:300;letter-spacing:-.3px}
